@@ -20,7 +20,7 @@ html{
 .content{
     color: var(--main);
     display: grid;
-    grid-template-columns: 1fr 55% 1fr;
+    grid-template-columns: 21.05% 55% 21.05%;
     column-gap: 20px;
 }
 
@@ -48,13 +48,19 @@ h1{
 }
 
 .note{
+    width: 21.05%;
     font-size: 0.8rem;
     position: absolute;
     color: var(--note);
 }
 
 .right{
-    right: -35%;
+    right: -26%;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 2rem;
 }
 
 :root{

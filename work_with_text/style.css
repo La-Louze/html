@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2 ?family=PT+Mono&display=swap');
 
 *{
     box-sizing: border-box;
@@ -6,14 +7,20 @@
     margin: 0;
 }
 
+ul{
+    list-style-type: "- ";
+}
+
 html{
     font-size: 20px;
 }
 
 .page{
+    margin: 0 auto;
     width: 100%;
     max-width: 1280px;
     padding-inline: 40px;
+    padding-bottom: 30px;
     font-family: 'PT Sans';
 }
 
@@ -30,6 +37,18 @@ html{
     row-gap: 50px;
     grid-column-start: 2;
     grid-column-end: 2;
+}
+
+.content_text{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.main_text{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 h1{
@@ -58,12 +77,58 @@ h1{
     right: -26%;
 }
 
+.left{
+    left: -26%;
+}
+
 h2{
     font-weight: 700;
     font-size: 2rem;
 }
 
+.content_center__code{
+    color: var(--text_code);
+    text-align: center;
+    font-family: "PT Mono";
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    width: 100%;
+    padding: 10px 20px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    background: #454545;
+}
+
+.note_svg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+span{
+    display: inline-flex;
+    padding: 5px 10px;
+    align-items: flex-start;
+    gap: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--border__color);
+}
+
+.content_center__list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
 :root{
+    --border__color: #D2D2D2;
+    --text_code:#D7D7D7;
     --note: #979797;
     --main: black;
 }
